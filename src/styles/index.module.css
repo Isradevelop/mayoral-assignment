@@ -1,0 +1,15 @@
+
+
+.principalContainer{
+    padding-left: 200px; 
+    padding-right: 200px; 
+    padding-top: 75px;
+}
+
+@media(width < 825px){
+    .principalContainer{
+        display: grid;
+        padding-left: 25px; 
+        padding-right: 50px; 
+    }
+}

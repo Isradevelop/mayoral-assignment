@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.container span{
+    font-size: 55px;
+    font-weight: bold;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.less{
+    line-height: 49px;
+}

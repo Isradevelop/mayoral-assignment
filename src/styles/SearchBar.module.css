@@ -1,0 +1,44 @@
+
+.searchBarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr{
+    opacity: 0;
+}
+
+.orderSelect{
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(202, 202, 202);
+    opacity: 0.5;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+@media(width < 825px){
+    .orderSelect{
+        width: 30%;
+    }
+}    
+@media(width < 600px){
+    .searchBarContainer{
+        flex-direction: column-reverse;
+    }
+    .hr{
+        margin-top: 55px;
+        margin-bottom: 55px;
+        opacity: 0.3;
+    }
+    .orderSelect{
+        margin-left: 48px;
+    }
+}
+
+
+
+
+
