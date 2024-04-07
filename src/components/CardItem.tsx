@@ -15,7 +15,7 @@ export const CardItem = ({ product }: cardItemProps) => {
     return (
         <div className={styles.cardItemContainer}>
             <div className={styles.header}>
-                <Image src="/images/no-image.png" width={350} height={350} layout='fill' />
+                <Image src="/images/no-image.png" layout='fill' />
             </div>
             <div className={styles.description}>{name}</div>
             <div>
