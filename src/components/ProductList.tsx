@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react"
 import { getProductsData } from "../services/ProductsService";
-import { CardItem } from "./CardItem";
+import { ProductItem } from "./ProductItem";
 import styles from '../styles/CardList.module.css'
 import { ProductContext } from "../context/ProductsContext";
 import { NumberOfColumnsContext } from "../context/NumberOfColumnsContext";
 
-export const CardList = () => {
+export const ProductList = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const { productsContextState, setProductsContextState, productsFilteredContextState, setProductsFilteredContextState } = useContext(ProductContext);
@@ -43,7 +43,7 @@ export const CardList = () => {
                     ? <span>Cargando resultados...</span>
                     : (
                         products?.map((product) => (
-                            <CardItem key={product.id} product={product} />
+                            <ProductItem key={product.id} product={product} />
                         ))
                     )
 

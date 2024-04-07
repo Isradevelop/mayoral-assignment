@@ -8,7 +8,7 @@ interface cardItemProps {
     product: Product
 }
 
-export const CardItem = ({ product }: cardItemProps) => {
+export const ProductItem = ({ product }: cardItemProps) => {
 
     const { image, name, price, discount, hasVariants } = product;
 

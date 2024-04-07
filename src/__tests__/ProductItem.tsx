@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { CardItem } from "../components/CardItem"
+import { ProductItem } from "../components/ProductItem"
 
 describe('CardItem component', () => {
 
@@ -14,13 +14,13 @@ describe('CardItem component', () => {
 
     it("Must show product name", () => {
 
-        render(<CardItem product={product} />);
+        render(<ProductItem product={product} />);
         expect(screen.getByText("Camisa gris")).toBeDefined();
     })
 
     it("Must show price with discount", () => {
 
-        render(<CardItem product={product} />);
+        render(<ProductItem product={product} />);
         expect(screen.getByText("80€(-20%)")).toBeDefined();
     })
 })
